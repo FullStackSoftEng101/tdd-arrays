@@ -13,7 +13,7 @@ import {
   findSpy,
 } from "./index.js";
 
-describe.only("getFirst", function () {
+describe("getFirst", function () {
   it("returns the first element of a number array", function () {
     expect(getFirst([1, 2, 3])).toBe(1);
   });
@@ -198,7 +198,7 @@ describe("findSong", function () {
 });
 
 // findSpy
-describe("findSpy", function () {
+describe.only("findSpy", function () {
   it("returns [0,1] for [[X,spy], [X,X]]", function () {
     expect(
       findSpy([
